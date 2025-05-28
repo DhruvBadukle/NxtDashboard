@@ -22,7 +22,7 @@ export const CommandMenu = ({
 
     document.addEventListener("keydown", down);
     return () => document.removeEventListener("keydown", down);
-  }, []);
+  }, [setOpen]);
 
   return (
     <Command.Dialog
@@ -44,8 +44,7 @@ export const CommandMenu = ({
         />
         <Command.List className="p-3">
           <Command.Empty>
-            No results found for{" "}
-            <span className="text-violet-500">"{value}"</span>
+            {`No results found for "${value}"`}
           </Command.Empty>
 
           <Command.Group heading="Team" className="text-sm mb-3 text-stone-400">

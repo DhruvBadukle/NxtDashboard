@@ -70,7 +70,7 @@ const UsageRadar: React.FC<UsageRadarProps> = ({
           <FiUser /> Activity
         </h3>
         <div className="mt-6 h-96">
-          <Radar data={data} />
+          <Radar data={data} options={options} />
         </div>
       </div>
     </div>

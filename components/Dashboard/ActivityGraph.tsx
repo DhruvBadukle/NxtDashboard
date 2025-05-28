@@ -62,7 +62,7 @@ const ActivityGraph = () => {
           <FiUser /> Activity
         </h3>
         <div className="mt-4">
-          <Line data={data}/>
+          <Line data={data} options={options} />
         </div>
       </div>
     </div>
